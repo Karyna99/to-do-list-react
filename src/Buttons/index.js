@@ -16,7 +16,7 @@ const Buttons = ({ tasks, hideDoneTasks }) => (
                     {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
                 </button>
             </React.Fragment>
-        )};
+        )}
     </div>
 );
 
