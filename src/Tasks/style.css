@@ -1,0 +1,72 @@
+.section__list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.list__item {
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    word-break: break-word;
+}
+
+@media (max-width: 767px) {
+    .list__item {
+        grid-template-columns: auto 1fr auto;
+        margin: auto;
+    }
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__button--done {
+    background-color: #1A7B1F;
+    color: white;
+    min-height: 34px;
+    min-width: 34px;
+    border: none;
+    text-decoration: none;
+}
+
+.list__button--done:active {
+    transform: scale(110%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.list__button--done:hover {
+    background-color: #25aa2c;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.list__button--remove {
+    background-color: #ED293E;
+    color: white;
+    min-height: 34px;
+    min-width: 34px;
+    border: none;
+    text-decoration: none;
+}
+
+.list__button--remove:active {
+    transform: scale(110%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.list__button--remove:hover {
+    background-color: #ff2e43;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.list__item--hidden {
+    display: none;
+}
