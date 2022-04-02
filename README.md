@@ -1,6 +1,7 @@
 # To-do List in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with Create React App.
+[Click here](https://karyna99.github.io/to-do-list-react/) to open the website.
 
 ## Available Scripts
 
