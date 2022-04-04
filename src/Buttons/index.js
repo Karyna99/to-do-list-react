@@ -2,17 +2,17 @@ import React from "react";
 import "./style.css";
 
 const Buttons = ({ tasks, hideDoneTasks }) => (
-    <div className="section__container">
+    <div className="buttons">
         {tasks.length > 0 && (
             <React.Fragment>
                 <button
-                    className="section__button--allDone"
+                    className="buttons__button--allDone"
                     disabled={tasks.every(({ done }) => done)}
                 >
                     Ukończ wszystkie
                 </button>
                 <button
-                    className="section__button--hideAndShow">
+                    className="buttons__button--hideAndShow">
                     {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
                 </button>
             </React.Fragment>
