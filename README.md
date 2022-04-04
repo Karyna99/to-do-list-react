@@ -1,7 +1,18 @@
 # To-do List in React
-
+## Demo
+I want to introduce [my app](https://karyna99.github.io/to-do-list/), which will help you to organize your daily activities. Just type your activity in the input and click the button "Dodaj zadanie" and it will appear in the section below. When your activity is done, just click the green button and it will mark your activity as done. If you made a mistake, don't worry, there is a red button with a bin emoji on it, which will remove your activity from the list. Enjoy!
+## Animated instruction
+![Page appearance](https://i.ibb.co/fdstKJT/to-do-list.gif)
+## Technologies
+- HTML
+- CSS
+- Grid
+- Flex
+- Javascript
+- BEM
+- React
+## React
 This project was bootstrapped with Create React App.
-[Click here](https://karyna99.github.io/to-do-list-react/) to open the website.
 
 ## Available Scripts
 
@@ -40,32 +51,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
