@@ -1,6 +1,6 @@
 # To-do List in React
 ## Demo
-I want to introduce [my app](https://karyna99.github.io/to-do-list/), which will help you to organize your daily activities. Just type your activity in the input and click the button "Dodaj zadanie" and it will appear in the section below. When your activity is done, just click the green button and it will mark your activity as done. If you made a mistake, don't worry, there is a red button with a bin emoji on it, which will remove your activity from the list. Enjoy!
+I want to introduce [my app](https://karyna99.github.io/to-do-list-react/), which will help you to organize your daily activities. Just type your activity in the input and click the button "Dodaj zadanie" and it will appear in the section below. When your activity is done, just click the green button and it will mark your activity as done. If you made a mistake, don't worry, there is a red button with a bin emoji on it, which will remove your activity from the list. Enjoy!
 ## Animated instruction
 ![Page appearance](https://i.ibb.co/fdstKJT/to-do-list.gif)
 ## Technologies
