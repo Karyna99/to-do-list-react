@@ -9,7 +9,7 @@ const Tasks = ({ tasks, hideDone }) => {
     return (
         <ul className="tasks__list">
             {tasks.map(task => (
-                <li key={task.id} className={`list__item${task.done && hideDone ? "list__item--hidden" : ""}`}
+                <li key={task.id} className={`list__item ${task.done && hideDone ? "list__item--hidden" : ""}`}
                 >
                     <button
                         className={`list__button--done`}>
