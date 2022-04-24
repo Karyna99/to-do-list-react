@@ -7,6 +7,12 @@
     .buttons {
         flex-direction: column;
     }
+    .buttons__button--allDone {
+        margin-bottom: 0 !important;
+    }
+    .buttons__button--hideAndShow {
+        margin-bottom: 0 !important;
+    }
 }
 
 .buttons__button--allDone {
@@ -23,6 +29,7 @@
 
 .buttons__button--allDone:hover {
     color: hsl(180, 100%, 30%);
+    cursor: pointer;
 }
 
 .buttons__button--allDone:disabled {
@@ -40,6 +47,7 @@
 
 .buttons__button--hideAndShow:active {
     color: hsl(180, 100%, 35%);
+    cursor: pointer;
 }
 
 .buttons__button--hideAndShow:hover {
