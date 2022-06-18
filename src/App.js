@@ -6,19 +6,27 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
-const getFromLocalStorage = () => {
-  const localTasks = localStorage.getItem("tasks");
 
-  return localTasks ? JSON.parse(localTasks) : [];
+const useLocalStorage = (keyName, initialValue) => {
+  const getFromLocalStorage = () => {
+    const localData = localStorage.getItem(keyName);
+  
+    return localData ? JSON.parse(localData) : initialValue;
+  };
+
+  const [state, setState] = useState(getFromLocalStorage);
+
+  useEffect(() => {
+    localStorage.setItem(keyName, JSON.stringify(state));
+  }, [state]);
+  return [state, setState];
+
 }
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(getFromLocalStorage);
+  const [tasks, setTasks] = useLocalStorage("tasks", []);
 
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
