@@ -1,18 +1,22 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./style.css";
 
 const Form = ({ addNewTask }) => {
+    const internalRef = useRef(null);
+    
     const [newTask, setNewTask] = useState("");
 
     const onFormSubmit = (event) => {
         event.preventDefault();
         addNewTask(newTask.trim());
         setNewTask("");
+        internalRef.current.focus();
     };
 
     return (
         <form className="form" onSubmit={onFormSubmit}>
             <input
+                ref={internalRef}
                 value={newTask}
                 autoFocus
                 placeholder="Co jest do zrobienia?"
