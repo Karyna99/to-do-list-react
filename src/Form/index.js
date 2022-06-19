@@ -1,21 +1,23 @@
 import { useRef, useState } from "react";
-import "./style.css";
+import { StyledForm, Input, Button } from "../styled";
 
 const Form = ({ addNewTask }) => {
     const internalRef = useRef(null);
-    
+
     const [newTask, setNewTask] = useState("");
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        addNewTask(newTask.trim());
+        if (newTask.trim()) {
+            addNewTask(newTask.trim());
+        };
         setNewTask("");
         internalRef.current.focus();
     };
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <input
+        <StyledForm onSubmit={onFormSubmit}>
+            <Input
                 ref={internalRef}
                 value={newTask}
                 autoFocus
@@ -24,8 +26,8 @@ const Form = ({ addNewTask }) => {
                 type="text"
                 onChange={({ target }) => setNewTask(target.value)}
             />
-            <button className="form__button">Dodaj zadanie</button>
-        </form>
+            <Button>Dodaj zadanie</Button>
+        </StyledForm>
     );
 };
 

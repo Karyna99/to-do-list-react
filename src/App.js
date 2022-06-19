@@ -6,6 +6,8 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
+import {theme} from "./styled";
+import { ThemeProvider } from 'styled-components';
 
 
 
@@ -20,6 +22,7 @@ function App() {
 
 
   return (
+    <ThemeProvider theme={theme}>
     <Container>
       <Header
         title="Lista zadań" />
@@ -43,6 +46,7 @@ function App() {
         />}
       />
     </Container>
+    </ThemeProvider>
   );
 }
 
