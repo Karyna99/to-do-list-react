@@ -97,7 +97,7 @@ export const TaskButton = styled.button`
     text-decoration: none;
 
     ${(props) => props.done && css`
-        background-color: #1A7B1F;
+        background-color: ${({ theme }) => theme.colors.done};
 
         &:hover{
             background-color: #25aa2c;
@@ -113,7 +113,7 @@ export const TaskButton = styled.button`
     `}
 
     ${(props) => props.remove && css`
-        background-color: #ED293E;
+        background-color: ${({ theme }) => theme.colors.remove};
 
         &:hover{
             background-color: #ff2e43;
