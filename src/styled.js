@@ -8,7 +8,7 @@ const theme = {
         borderColor: "#dddddd",
         backgroundColor: "white"
     }
-}
+};
 
 export const StyledForm = styled.form`
     padding: 20px 10px 10px;
@@ -49,6 +49,21 @@ export const Button = styled.button`
     &:active{
         background-color: #04acc2;
     }
+
+    ${(props) => props.task && css`
+        border: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: white;
+        color: ${({ theme }) => theme.colors.primary};
+
+        &:hover{
+            color: hsl(180, 100%, 30%);
+            background-color: white;
+            transform: none;
+            cursor: pointer;
+        }
+    `}
 `;
 
 export const StyledSection = styled.section`
@@ -57,7 +72,18 @@ export const StyledSection = styled.section`
     padding: 10px;
 `;
 
-export const Header = styled.header`
+export const ButtonsContainer = styled.div`
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+
+    @media (max-width: 767px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
+`;
+
+export const StyledHeader = styled.header`
     margin-left: 20px;
     margin-top: 40px;
     font-size: 30px;
