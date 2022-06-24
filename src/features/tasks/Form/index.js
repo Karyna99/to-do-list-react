@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { StyledForm, Input, Button } from "../styled";
+import { StyledForm, Input, Button } from "../../../styled";
 
 const Form = ({ addNewTask }) => {
     const internalRef = useRef(null);

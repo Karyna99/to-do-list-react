@@ -1,4 +1,4 @@
-import { StyledSection, StyledHeader, SectionContainer } from "../styled";
+import { StyledSection, StyledHeader, SectionContainer } from "../../styled";
 
 const Section = ({ title, body, extraContent }) => (
     <StyledSection>
