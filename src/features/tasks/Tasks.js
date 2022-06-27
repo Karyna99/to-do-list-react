@@ -1,6 +1,4 @@
 import { useTasks } from "../../useTasks";
-import { useSelector } from "react-redux";
-import { selectTasks } from "./tasksSlice";
 import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
@@ -14,12 +12,11 @@ function Tasks() {
 
   const {
     // tasks,
-    removeTask,
-    toggleTaskdone,
-    setAllDone,
-    addNewTask } = useTasks();
-
-  const { tasks } = useSelector(selectTasks)
+    // removeTask,
+    // toggleTaskdone,
+    // setAllDone,
+    // addNewTask 
+  } = useTasks();
 
   return (
     <ThemeProvider theme={theme}>
@@ -28,16 +25,12 @@ function Tasks() {
           title="Lista zadań" />
         <Section
           title="Dodaj nowe zadanie"
-          body={<Form addNewTask={addNewTask} />}
+          body={<Form />}
         />
         <Section
           title="Lista zadań"
-          body={<TaskList
-            removeTask={removeTask}
-            toggleTaskdone={toggleTaskdone}
-          />}
+          body={<TaskList/>}
           extraContent={<Buttons
-            setAllDone={setAllDone}
           />}
         />
       </Container>
