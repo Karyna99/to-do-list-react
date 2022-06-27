@@ -1,6 +1,10 @@
 import { List, ListItem, TaskButton, Text } from "../../../styled";
+import { useSelector } from "react-redux";
+import { selectTasks } from "../tasksSlice";
 
-const TaskList = ({ tasks, hideDone, removeTask, toggleTaskdone }) => {
+const TaskList = ({ removeTask, toggleTaskdone }) => {
+    const { tasks, hideDone } = useSelector(selectTasks);
+
     return (
         <List>
             {tasks.map(task => (
@@ -15,7 +19,7 @@ const TaskList = ({ tasks, hideDone, removeTask, toggleTaskdone }) => {
                         {task.done ? "✓" : " "}
                     </TaskButton>
                     <Text done={task.done}>
-                        {task.id} - {task.content}
+                        {task.content}
                     </Text>
                     <TaskButton
                         remove
