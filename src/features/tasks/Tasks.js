@@ -1,4 +1,3 @@
-import { useTasks } from "../../useTasks";
 import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
@@ -10,13 +9,6 @@ import { ThemeProvider } from 'styled-components';
 
 function Tasks() {
 
-  const {
-    // tasks,
-    // removeTask,
-    // toggleTaskdone,
-    // setAllDone,
-    // addNewTask 
-  } = useTasks();
 
   return (
     <ThemeProvider theme={theme}>

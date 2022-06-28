@@ -67,7 +67,7 @@ export const ListItem = styled.li`
 
     
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: auto 1fr auto;
         margin: auto;
 }

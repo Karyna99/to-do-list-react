@@ -13,7 +13,7 @@ export const SectionContainer = styled.div`
     `}
 
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         flex-direction: column;
     }
 `;
