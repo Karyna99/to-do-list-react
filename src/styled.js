@@ -6,7 +6,8 @@ const theme = {
         done: "#1A7B1F",
         remove: "#ED293E",
         borderColor: "#dddddd",
-        backgroundColor: "white"
+        backgroundColor: "white",
+        disabledColor: "#BEBEBE",
     },
     breakpoints: {
         mobile: 767,
@@ -48,6 +49,9 @@ export const Button = styled.button`
             background-color: white;
             transform: none;
             cursor: pointer;
+        }
+        &:disabled{
+            color: ${({ theme }) => theme.colors.disabledColor};
         }
     `}
 `;

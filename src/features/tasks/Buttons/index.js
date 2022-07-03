@@ -13,7 +13,7 @@ const Buttons = () => {
                 <>
                     <Button task
                         onClick={() => dispatch(setAllDone())}
-                        disabled={tasks.every(({ done }) => done)}
+                        disabled={tasks.every((task) => task.done)}
                     >
                         Ukończ wszystkie
                     </Button>
