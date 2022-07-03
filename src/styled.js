@@ -52,6 +52,7 @@ export const Button = styled.button`
         }
         &:disabled{
             color: ${({ theme }) => theme.colors.disabledColor};
+            cursor: default;
         }
     `}
 `;
