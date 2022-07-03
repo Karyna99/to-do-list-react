@@ -11,6 +11,8 @@ I want to introduce [my app](https://karyna99.github.io/to-do-list-react/), whic
 - Javascript
 - BEM
 - React
+- styled-components
+- Redux
 ## React
 This project was bootstrapped with Create React App.
 
