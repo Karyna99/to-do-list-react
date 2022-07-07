@@ -14,8 +14,8 @@ function* fetchExampleTasksWorker() {
 
 function* saveTasksInLocalStorageWorker() {
     const tasks = yield select(selectTasks);
-    yield call(saveTasksInLocalStorage, tasks);
-}
+    yield call(saveTasksInLocalStorage, tasks.tasks)
+};
 
 export function* watchFetchExampleTasks() {
     yield takeLatest(fetchExampleTasks.type, fetchExampleTasksWorker);
