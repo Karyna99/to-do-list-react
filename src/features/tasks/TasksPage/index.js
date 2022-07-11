@@ -1,14 +1,13 @@
-import Form from "./Form";
-import TaskList from "./TaskList";
-import Buttons from "./Buttons";
-import Section from "../../common/Section/index";
-import Header from "../../common/Header/index";
-import Container from "../../common/Container";
-import { theme } from "../../styled";
+import Section from "../../../common/Section/index";
+import Header from "../../../common/Header/index";
+import Container from "../../../common/Container";
+import Buttons from "./Buttons/index";
+import Form from "./Form/index";
+import TaskList from "./TaskList/index"
+import { theme } from "../../../styled";
 import { ThemeProvider } from 'styled-components';
 
-function Tasks() {
-
+function TasksPage() {
 
   return (
     <ThemeProvider theme={theme}>
@@ -30,6 +29,6 @@ function Tasks() {
   );
 };
 
-export default Tasks;
+export default TasksPage;
 
 
