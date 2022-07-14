@@ -6,6 +6,7 @@ import Form from "./Form/index";
 import TaskList from "./TaskList/index"
 import { theme } from "../../../styled";
 import { ThemeProvider } from 'styled-components';
+import ExampleTasksButton from "./ExampleTasksButton";
 
 function TasksPage() {
 
@@ -17,6 +18,7 @@ function TasksPage() {
         <Section
           title="Dodaj nowe zadanie"
           body={<Form />}
+          extraContent={<ExampleTasksButton/>}
         />
         <Section
           title="Lista zadań"

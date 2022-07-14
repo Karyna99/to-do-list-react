@@ -39,9 +39,10 @@ export const Button = styled.button`
 
     ${(props) => props.task && css`
         border: none;
-        padding: 10px;
-        margin-bottom: 10px;
+        padding: 0 15px 10px;
+        margin: 0;
         background-color: white;
+        border-bottom: 1px solid #dddddd;
         color: ${({ theme }) => theme.colors.primary};
 
         &:hover{
